@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Photography — Finding Stories in Everyday Moments</title>
+    <meta name="description" content="A collection of moments, places and details captured through smartphone photography. Aspiring photographer interested in visual storytelling.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">Personal Photography</a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-label">Mobile Photography</p>
+                <h1 class="hero-title">Finding stories in everyday moments.</h1>
+                <p class="hero-description">A collection of moments, places and details captured through my smartphone camera. I'm drawn to natural light, quiet compositions and the beauty found in ordinary scenes.</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn-primary">Explore Work ↓</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- UNIQUE: hero-sunset-silhouette.jpg — used ONLY here -->
+                <img src="photos/hero-sunset-silhouette.jpg" alt="Sunset silhouette with palm trees against a vibrant orange and pink sky" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY / WORK ==================== -->
+    <section class="section" id="work">
+        <div class="section-header">
+            <p class="section-label">Selected Work</p>
+            <h2 class="section-title">Photographs</h2>
+            <p class="section-subtitle">A curated selection of moments captured on my smartphone — exploring light, texture and everyday beauty.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature & Landscapes</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="street">Street & Everyday</button>
+            <button class="filter-btn" data-filter="light">Light & Silhouettes</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+
+            <!-- === NATURE & LANDSCAPES === -->
+
+            <!-- ID: nature-morning-light — Morning sunlight streaming through garden trees -->
+            <div class="gallery-item" data-category="nature">
+                <img src="photos/nature-morning-light.jpg" alt="Golden morning sun breaking through trees casting long shadows on a green lawn" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Morning Glow</p>
+                    <p class="overlay-category">Nature & Landscapes</p>
+                </div>
+            </div>
+
+            <!-- ID: nature-waterfall — Waterfall in rocky landscape -->
+            <div class="gallery-item" data-category="nature">
+                <img src="photos/nature-waterfall.jpg" alt="Waterfall cascading over rocky terrain surrounded by greenery" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Hidden Falls</p>
+                    <p class="overlay-category">Nature & Landscapes</p>
+                </div>
+            </div>
+
+            <!-- ID: nature-palm-trees — Looking up at palm trees -->
+            <div class="gallery-item" data-category="nature">
+                <img src="photos/nature-palm-trees.jpg" alt="Towering coconut palm trees viewed from below against an overcast sky" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Reaching Skyward</p>
+                    <p class="overlay-category">Nature & Landscapes</p>
+                </div>
+            </div>
+
+            <!-- ID: nature-coastal-view — Aerial coastal landscape with ocean -->
+            <div class="gallery-item" data-category="nature">
+                <img src="photos/nature-coastal-view.jpg" alt="Coastal aerial view with lush green trees and ocean in the distance" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Coastal Canopy</p>
+                    <p class="overlay-category">Nature & Landscapes</p>
+                </div>
+            </div>
+
+            <!-- === ARCHITECTURE === -->
+
+            <!-- ID: arch-lighthouse — Lighthouse tower against dramatic sky -->
+            <div class="gallery-item tall" data-category="architecture">
+                <img src="photos/arch-lighthouse.jpg" alt="Historic stone lighthouse towering against dramatic wispy clouds" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">The Lighthouse</p>
+                    <p class="overlay-category">Architecture</p>
+                </div>
+            </div>
+
+            <!-- ID: arch-heritage-house — Heritage house with terracotta roof -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="photos/arch-heritage-house.jpg" alt="Heritage house with terracotta tile roof nestled among green foliage and rock" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Heritage Rooftop</p>
+                    <p class="overlay-category">Architecture</p>
+                </div>
+            </div>
+
+            <!-- ID: arch-temple-sculpture — Temple sculpture in dramatic light -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="photos/arch-temple-sculpture.jpg" alt="Intricate stone temple sculpture illuminated by warm light in a grand hall" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Stone & Light</p>
+                    <p class="overlay-category">Architecture</p>
+                </div>
+            </div>
+
+            <!-- ID: arch-blue-house — Vibrant blue house with palm trees -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="photos/arch-blue-house.jpg" alt="Vibrant blue house with red roof surrounded by coconut palm trees" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">The Blue House</p>
+                    <p class="overlay-category">Architecture</p>
+                </div>
+            </div>
+
+            <!-- === STREET & EVERYDAY MOMENTS === -->
+
+            <!-- ID: street-cat-portrait — Cat sitting and looking to the side -->
+            <div class="gallery-item" data-category="street">
+                <img src="photos/street-cat-portrait.jpg" alt="Ginger cat sitting calmly in a courtyard, looking to the side" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">The Observer</p>
+                    <p class="overlay-category">Street & Everyday</p>
+                </div>
+            </div>
+
+            <!-- ID: street-cat-closeup — Intimate close-up of a cat's face -->
+            <div class="gallery-item" data-category="street">
+                <img src="photos/street-cat-closeup.jpg" alt="Intimate close-up of a sleeping ginger cat showing soft fur detail" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Quiet Moment</p>
+                    <p class="overlay-category">Street & Everyday</p>
+                </div>
+            </div>
+
+            <!-- ID: street-boulder-park — Krishna's butterball boulder with visitors -->
+            <div class="gallery-item" data-category="street">
+                <img src="photos/street-boulder-park.jpg" alt="Famous balancing boulder on a rocky hillside with visitors and green parkland" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">The Balancing Act</p>
+                    <p class="overlay-category">Street & Everyday</p>
+                </div>
+            </div>
+
+            <!-- ID: street-cyclist — Man cycling on a village road -->
+            <div class="gallery-item" data-category="street">
+                <img src="photos/street-cyclist.png" alt="Man cycling along a sunlit village road lined with palm trees and houses" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Village Road</p>
+                    <p class="overlay-category">Street & Everyday</p>
+                </div>
+            </div>
+
+            <!-- === LIGHT & SILHOUETTES === -->
+
+            <!-- ID: light-golden-sunset — Palm tree silhouette in golden sunset -->
+            <div class="gallery-item tall" data-category="light">
+                <img src="photos/light-golden-sunset.jpg" alt="Palm tree silhouette against a golden sunset sky with warm orange tones" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Golden Hour</p>
+                    <p class="overlay-category">Light & Silhouettes</p>
+                </div>
+            </div>
+
+            <!-- ID: light-sunset-streaks — Sunset with streaked orange and pink sky -->
+            <div class="gallery-item" data-category="light">
+                <img src="photos/light-sunset-streaks.jpg" alt="Dramatic sunset with streaked orange and pink clouds framing palm tree silhouettes" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Painted Sky</p>
+                    <p class="overlay-category">Light & Silhouettes</p>
+                </div>
+            </div>
+
+            <!-- ID: light-deep-sunset — Deep red-orange sunset with full silhouettes -->
+            <div class="gallery-item" data-category="light">
+                <img src="photos/light-deep-sunset.jpg" alt="Deep sunset with fiery red-orange sky and dark tree silhouettes" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Afterglow</p>
+                    <p class="overlay-category">Light & Silhouettes</p>
+                </div>
+            </div>
+
+            <!-- ID: light-dramatic-clouds — Dramatic dark clouds over rooftops -->
+            <div class="gallery-item" data-category="light">
+                <img src="photos/light-dramatic-clouds.jpg" alt="Dramatic dark clouds swirling over town rooftops with a temple spire visible" loading="lazy">
+                <div class="overlay">
+                    <p class="overlay-title">Before the Storm</p>
+                    <p class="overlay-category">Light & Silhouettes</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+        <div class="about-content">
+            <div class="about-left">
+                <p class="section-label">About</p>
+                <h2 class="about-title">A little about me</h2>
+            </div>
+            <div class="about-right">
+                <div class="about-text">
+                    <p>I'm an aspiring photographer with a genuine interest in visual storytelling. I enjoy capturing different perspectives, exploring natural light and experimenting with composition using my smartphone.</p>
+                    <p>Every image here was captured on a mobile phone — no professional equipment, just curiosity and an eye for moments that feel worth remembering. I'm drawn to the interplay of light and shadow, the textures of everyday life, and the quiet beauty in ordinary scenes.</p>
+                    <p>I'm currently looking for an opportunity to gain hands-on experience by assisting a professional photography or creative team. I'm eager to learn, willing to put in the work, and genuinely passionate about the craft.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT I CAN CONTRIBUTE ==================== -->
+    <section class="section contribute-section">
+        <div class="section-header">
+            <p class="section-label">What I Bring</p>
+            <h2 class="section-title">What I can contribute</h2>
+            <p class="section-subtitle">I may not have professional experience yet, but I bring dedication, adaptability and a willingness to learn.</p>
+        </div>
+        <ul class="contribute-list">
+            <li>
+                <span class="list-marker"></span>
+                <div>
+                    <span class="list-title">Assisting on shoots</span> — Setting up equipment, managing props, handling lighting setups and supporting the photographer on location.
+                </div>
+            </li>
+            <li>
+                <span class="list-marker"></span>
+                <div>
+                    <span class="list-title">Post-production support</span> — Basic photo editing, colour correction, file management and organising image libraries.
+                </div>
+            </li>
+            <li>
+                <span class="list-marker"></span>
+                <div>
+                    <span class="list-title">Creative eye</span> — An instinct for composition, framing and natural light developed through consistent personal practice.
+                </div>
+            </li>
+            <li>
+                <span class="list-marker"></span>
+                <div>
+                    <span class="list-title">Content creation</span> — Capturing behind-the-scenes footage, social media content and supplementary visual material.
+                </div>
+            </li>
+            <li>
+                <span class="list-marker"></span>
+                <div>
+                    <span class="list-title">Reliability & adaptability</span> — A quick learner who shows up prepared, takes direction well and stays positive under pressure.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact-section" id="contact">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="contact-title">Let's connect</h2>
+        <p class="contact-text">If you're looking for a dedicated assistant or someone eager to learn and contribute to creative projects, I'd love to hear from you.</p>
+        <a href="mailto:rajavisvaeswaran162006@gmail.com" class="contact-email">
+            rajavisvaeswaran162006@gmail.com →
+        </a>
+        <br><br>
+        <a href="tel:+917397409472" class="contact-email">
+            +91 7397409472 →
+        </a>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>© 2026 Personal Photography. All photographs are original work captured on a smartphone.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+        <img src="" alt="">
+        <div class="lightbox-caption">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+

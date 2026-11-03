@@ -1,0 +1,9 @@
+# Dependencies and archives
+*.zip
+extracted_photos/
+Photography/
+*.DNG
+.vscode/
+.vercel
+/IMG*
+/file_*

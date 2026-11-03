@@ -1,0 +1,10 @@
+# Vercel Ignore
+# Ignore large raw archives and temp folders
+*.zip
+extracted_photos/
+Photography/
+*.DNG
+.vscode/
+scratch/
+/IMG*
+/file_*
